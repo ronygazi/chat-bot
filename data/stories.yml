@@ -1,0 +1,53 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: shikhao
+  steps:
+  - intent: shikhao_assistant
+  - action: utter_shikhao_assistant
+  - intent: course_help
+  - action: utter_course_help
+  - intent: course_cost
+  - action: utter_course_cost
+  - intent: course_duration
+  - action: utter_course_duration
+  - intent: payment_procedure
+  - action: utter_payment_procedure
+  - intent: shikhao_service
+  - action: utter_shikhao_service
+  - action: utter_did_that_help
+  - intent: shikhao_project_completion
+  - action: utter_shikhao_project_completion
+  - intent: become_shikhao_tutor
+  - action: utter_become_shikhao_tutor
+  - action: utter_did_that_help
+  - intent: shikhao_form_fill_up_done
+  - action: utter_shikhao_form_fill_up_done

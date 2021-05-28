@@ -1,0 +1,144 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  # shikhao data
+
+  - intent: shikhao_assistant
+    examples: |
+      - I need help?
+      - Hey. Is anyone there?
+      - Is anyone available?
+      - Hey.
+  - intent: course_help
+    examples: |
+      - I need help with a course
+      - I need help with project
+      - I need help with an assignment
+      - I need help with a subject
+      - help me with this course/assigment/subject
+  - intent: course_duration
+    examples: |
+      - How long will this take?
+      - course duration ?
+
+  - intent: course_cost
+    examples: |
+      - How much will this cost?
+      - cost.
+
+  - intent: payment_procedure
+    examples: |
+      - What is the payment procedure?
+      - How to pay?
+
+  - intent: shikhao_service
+    examples: |
+      - What service does shikhao provide/ How does it work?
+      - Hey
+
+  - intent: shikhao_project_completion
+    examples: |
+      - Need help with this course/assignment/project?
+      - I need this course/assignment/project done?
+      - I need someone to do this course/assignment/project for me.
+
+  - intent: become_shikhao_tutor
+    examples: |
+      - how can I become a tutor?
+
+  - intent: shikhao_form_fill_up_done
+    examples: |
+      - I filled up the form. / Done with the form.
+
+
+

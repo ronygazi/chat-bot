@@ -1,0 +1,95 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - shikhao_assistant
+  - course_cost
+  - course_help
+  - course_duration
+  - payment_procedure
+  - shikhao_service
+  - shikhao_project_completion
+  - become_shikhao_tutor
+  - shikhao_form_fill_up_done
+
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_shikhao_assistant:
+    - text: "Hello sir/madam. Thank you for reaching out to Shikhao. How can we help?"
+
+  utter_course_duration:
+    - text: "We will search for a tutor who is willing to provide a session for this request you made. Please do be patient
+        and we will notify you asap. Provide your contact number so we can contact you
+         in case we do not find you available online."
+  utter_course_help:
+    - text: "Give details regarding your query and someone from Shikhao will contact."
+    - text: "Is there anything else I can help you with?"
+  utter_course_cost:
+    - text: " 1 hour session is 269BDT and every additional hour is 200BDT (For clients who want sessions).
+           For Assignment/project it depends on the course and how many hours our tutor will invest. "
+
+  utter_payment_procedure:
+    - text: "Please pay the sir/madam, charge in the bkash no. +8801834813163 and provide the bkash fee. Thank you."
+
+  utter_shikhao_service:
+    - text: "Hello sir/madam, thank you for contacting Shikhao.
+             Shikhao is an on-demand tutoring service for university students. Meaning we supply tutor on a demand
+             based on what subject you specifically want to learn. We help with any problems you may face with a course/subject
+              on an hourly basis.
+             * You request help in a particular course.
+             * You provide us with the syllabus, problems, and your desired session time.
+             * We connect you with a tutor tailored to meet your needs. Please do note that it may require some
+             time to process the request but be carried out as soon as possible."
+
+  utter_shikhao_project_completion:
+    - text: "We can help you by having our tutors teach you on how to work on your assignment.
+            Please provide details of your project/assignment/course, your phone number (if new client),
+            personal email address (if new client). Once we find a tutor for your request,
+            we will update you asap. Do note that this does not mean our tutors will do it for you as our goal
+            is to help provide you with the tools to do better in your courses."
+
+  utter_become_shikhao_tutor:
+    - text: "Hello sir/madam, you can become a tutor by filling up our tutor form. Once that is done you will be contacted by us when we have a session offering or in need of your expertise.
+             Here's our tutor form link: https://forms.gle/hP9MVanhTADX7UFX9
+             Please notify us once you have filled up the form and we will add you to our Facebook group."
+
+  utter_shikhao_form_fill_up_done:
+    - text: "Hello sir/madam, thank you for contacting Shikhao.
+             Shikhao is an on-demand tutoring service for university students. Meaning we supply tutor on a demand based on what subject you specifically want to learn. We help with any problems you may face with a course/subject on an hourly basis.
+             * You request help in a particular course.
+             * You provide us with the syllabus, problems, and your desired session time.
+             * We connect you with a tutor tailored to meet your needs. Please do note that it may require some time to process the request but be carried out as soon as possible.
+
+             You can become a tutor by filling up our tutor form. Once that is done you will be contacted by us when we have a session offering or in need of your expertise.
+             Here's our tutor form link: https://forms.gle/hP9MVanhTADX7UFX9
+
+             Please notify us once you have filled up the form and we will add you to our Facebook group."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
