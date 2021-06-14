@@ -11,12 +11,18 @@ intents:
   - shikhao_assistant
   - course_cost
   - course_help
+  - course_list
   - course_duration
+  - contact_info
   - payment_procedure
   - shikhao_service
   - shikhao_project_completion
   - become_shikhao_tutor
   - shikhao_form_fill_up_done
+  - student
+  - teacher
+  - out_of_scope
+
 
 responses:
   utter_greet:
@@ -25,6 +31,7 @@ responses:
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
       image: "https://i.imgur.com/nGF1K8f.jpg"
+
 
   utter_did_that_help:
     - text: "Did that help you?"
@@ -42,18 +49,24 @@ responses:
     - text: "Hello sir/madam. Thank you for reaching out to Shikhao. How can we help?"
 
   utter_course_duration:
-    - text: "We will search for a tutor who is willing to provide a session for this request you made. Please do be patient
-        and we will notify you asap. Provide your contact number so we can contact you
-         in case we do not find you available online."
+    - text: "We will search for a tutor who is willing to provide a session for this request you made."
+    - text:  " Please do be patient  and we will notify you asap.
+        Provide your contact number so we can contact you in case we do not find you available online."
   utter_course_help:
     - text: "Give details regarding your query and someone from Shikhao will contact."
-    - text: "Is there anything else I can help you with?"
+
   utter_course_cost:
     - text: " 1 hour session is 269BDT and every additional hour is 200BDT (For clients who want sessions).
            For Assignment/project it depends on the course and how many hours our tutor will invest. "
+  utter_studentOrTeacher:
+    - text: "Are you a student or teacher?"
+  utter_student_payment_procedure:
+    - text: "Please pay the sir/madam, charge in the bkash no. +8801XXXXXXX and provide the bkash fee. Thank you."
 
-  utter_payment_procedure:
-    - text: "Please pay the sir/madam, charge in the bkash no. +8801834813163 and provide the bkash fee. Thank you."
+  utter_teacher_payment_procedure:
+    - text: "Please call this number +8801XXXXXXX for payment details. Thank you."
+  utter_shikhao_contact_end:
+    - text: " Call in this number 01xxxxxxxxx or mail at info@shikhaobd.com"
 
   utter_shikhao_service:
     - text: "Hello sir/madam, thank you for contacting Shikhao.
@@ -88,7 +101,20 @@ responses:
              Here's our tutor form link: https://forms.gle/hP9MVanhTADX7UFX9
 
              Please notify us once you have filled up the form and we will add you to our Facebook group."
+  utter_shikhao_info_end:
+    - text: "For more information about our services and products can 01XXXXXXX.
+              Thank you."
+  utter_details_info:
+    - text: " We have received your information, someone from shikhao will contact you"
 
+#  utter_default:
+#    - text: " sorry i didn't get that. can you rephrase?"
+#
+#  utter_out_of_rephrase:
+#    - text: " sorry, this message is unknown please rephrase it or give ur details info well connect to you asap"
+#
+  utter_out_of_scope:
+    - text: " Sorry, I can't handle that request."
 
 session_config:
   session_expiration_time: 60

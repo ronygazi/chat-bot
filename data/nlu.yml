@@ -1,22 +1,6 @@
 version: "2.0"
 
 nlu:
-  - intent: greet
-    examples: |
-      - hey
-      - hello
-      - hi
-      - hello there
-      - good morning
-      - good evening
-      - moin
-      - hey there
-      - let's go
-      - hey dude
-      - goodmorning
-      - goodevening
-      - good afternoon
-
   - intent: goodbye
     examples: |
       - good afternoon
@@ -49,6 +33,18 @@ nlu:
       - don't like that
       - no way
       - not really
+
+  - intent: student
+    examples: |
+      - student
+      - s
+      - yes i am a student
+
+  - intent: teacher
+    examples: |
+      - teacher
+      - y
+      - yes i am a teacher
 
   - intent: mood_great
     examples: |
@@ -95,50 +91,95 @@ nlu:
 
   - intent: shikhao_assistant
     examples: |
+      - hi
+      - hey
+      - Hello
+      - hello
+      - hallo
+      - hola
+      - hay
       - I need help?
       - Hey. Is anyone there?
       - Is anyone available?
-      - Hey.
+      - Hey. Is anyone available need help with a course
+
+
   - intent: course_help
     examples: |
-      - I need help with a course
-      - I need help with project
-      - I need help with an assignment
-      - I need help with a subject
-      - help me with this course/assigment/subject
+      - i need help with a course
+      - i need help with project
+      - i need help with an assignment
+      - i need help with a subject
+      - help me with this course
+      - help me with this assigment
+      - help me with this subject
   - intent: course_duration
     examples: |
-      - How long will this take?
+      - how long will this take?
       - course duration ?
+      - when can i expect your reply?
 
   - intent: course_cost
     examples: |
-      - How much will this cost?
+      - how much will this cost?
       - cost.
 
   - intent: payment_procedure
     examples: |
-      - What is the payment procedure?
-      - How to pay?
+      - what is the payment procedure?
+      - how to pay?
+      - give me payment details
+      - payment details
+
+  - intent: contact_info
+    examples: |
+      - contact info
+      - how to contact?
+      - give me contact details
+      - contact details
+
 
   - intent: shikhao_service
     examples: |
-      - What service does shikhao provide/ How does it work?
-      - Hey
+      - what service does shikhao provide?
+      - how does it work?
+      - how shikhao works?
+      - what is shikhao?
 
   - intent: shikhao_project_completion
     examples: |
-      - Need help with this course/assignment/project?
-      - I need this course/assignment/project done?
-      - I need someone to do this course/assignment/project for me.
+      - need help with this course/assignment/project?
+      - i need this course/assignment/project done?
+      - i need someone to do this course/assignment/project for me.
 
   - intent: become_shikhao_tutor
     examples: |
       - how can I become a tutor?
-
+      - i want be a teacher
   - intent: shikhao_form_fill_up_done
     examples: |
-      - I filled up the form. / Done with the form.
+      - I filled up the form.
+      - Done with the form.
+  - intent: course_list
+    examples: |
+      - algorithm
+      - web development
+      - java
+      - c++
+      - microprossesor
+      - bangla
+      - eng 101
+      - eng 201
+      - math
+      - math 301
+      - data minning
+      - math 212
+#  - intent: out_of_scope
+#    examples: |
+#      - what  is 2 + 2  ?
+#      - i want to order food
+
+
 
 
 
