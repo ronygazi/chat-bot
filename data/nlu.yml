@@ -104,6 +104,8 @@ nlu:
       - Hey. Is anyone available need help with a course
 
 
+
+
   - intent: course_help
     examples: |
       - i need help with a course

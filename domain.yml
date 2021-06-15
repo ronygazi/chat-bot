@@ -21,8 +21,9 @@ intents:
   - shikhao_form_fill_up_done
   - student
   - teacher
-  - out_of_scope
-
+#  - out_of_scope
+#actions:
+#  - utter_default
 
 responses:
   utter_greet:
@@ -107,15 +108,127 @@ responses:
   utter_details_info:
     - text: " We have received your information, someone from shikhao will contact you"
 
-#  utter_default:
-#    - text: " sorry i didn't get that. can you rephrase?"
+  utter_default:
+    - text: " sorry i didn't get that. can you rephrase?"
 #
 #  utter_out_of_rephrase:
 #    - text: " sorry, this message is unknown please rephrase it or give ur details info well connect to you asap"
 #
-  utter_out_of_scope:
-    - text: " Sorry, I can't handle that request."
+#  utter_out_of_scope:
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#    - text: " Sorry, I can't handle that request."
+
+#actions:
+#  - action_restart
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
